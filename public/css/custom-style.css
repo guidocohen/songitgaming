@@ -1,0 +1,209 @@
+.view,
+body,
+html {
+    height: 100%
+}
+
+@media (max-width:740px) {
+    .full-page-intro {
+        height: 1000px
+    }
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, .3)
+}
+
+.page-footer,
+.top-nav-collapse {
+    background-color: #1C2331
+}
+
+@media only screen and (max-width:768px) {
+    .navbar {
+        background-color: #1C2331
+    }
+}
+
+html,
+body,
+header,
+.jarallax {
+    height: 800px;
+}
+
+@media (max-width: 740px) {
+    html,
+    body,
+    header,
+    .jarallax {
+        height: 100vh;
+    }
+}
+
+@media (min-width: 800px) and (max-width: 850px) {
+    html,
+    body,
+    header,
+    .jarallax {
+        height: 100vh;
+    }
+}
+
+@media (min-width: 560px) and (max-width: 660px) {
+    header .jarallax h5 {
+        display: none !important;
+    }
+}
+
+.page-footer {
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+.zoomin {
+    cursor: zoom-in !important;
+}
+
+
+/* Materialize Carousel */
+
+.carousel {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 400px;
+    -webkit-perspective: 500px;
+    perspective: 500px;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transform-origin: 0% 50%;
+    transform-origin: 0% 50%
+}
+
+@media(max-width: 600px) {
+    .carousel {
+        height: 400px;
+    }
+}
+
+.carousel.carousel-slider {
+    top: 0;
+    left: 0
+}
+
+.carousel.carousel-slider .carousel-fixed-item {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 20px;
+    z-index: 1
+}
+
+.carousel.carousel-slider .carousel-fixed-item.with-indicators {
+    bottom: 68px
+}
+
+.carousel.carousel-slider .carousel-item {
+    width: 100%;
+    height: 100%;
+    min-height: 400px;
+    position: absolute;
+    top: 0;
+    left: 0
+}
+
+.carousel.carousel-slider .carousel-item h2 {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 32px
+}
+
+.carousel.carousel-slider .carousel-item p {
+    font-size: 15px
+}
+
+.carousel .carousel-item {
+    visibility: hidden;
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 0;
+    left: 0
+}
+
+@media(max-width: 600px) {
+    .carousel .carousel-item {
+        visibility: hidden;
+        width: 300px;
+        height: 300px;
+        position: absolute;
+        top: 0;
+        left: 0
+    }
+}
+
+.carousel .carousel-item>img {
+    width: 100%
+}
+
+.carousel .indicators {
+    position: absolute;
+    text-align: center;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0
+}
+
+.carousel .indicators .indicator-item {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    height: 8px;
+    width: 8px;
+    margin: 24px 4px;
+    background-color: rgba(255, 255, 255, 0.5);
+    -webkit-transition: background-color .3s;
+    transition: background-color .3s;
+    border-radius: 50%
+}
+
+.carousel .indicators .indicator-item.active {
+    background-color: #fff
+}
+
+.carousel.scrolling .carousel-item .materialboxed,
+.carousel .carousel-item:not(.active) .materialboxed {
+    pointer-events: none
+}
+
+
+/* Materialize Parallax */
+
+.parallax-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.parallax-container .parallax {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.parallax-container .parallax img {
+    opacity: 0;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}

@@ -1,0 +1,27 @@
+main {
+    margin-top: 80px;
+}
+
+.position {
+    position: relative;
+    width: 100%;
+}
+
+.position img {
+    width: 100%;
+}
+
+.position .btn {
+    position: absolute;
+    bottom: 13%;
+    right: 29%;
+    transform: translate(62%, 100%);
+    -ms-transform: translate(62%, 100%);
+    padding: 1% 6%;
+}
+
+@media(max-width: 767px) {
+    .btn-lg {
+        font-size: 0.65rem !important;
+    }
+}
