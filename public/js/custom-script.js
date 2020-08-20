@@ -36,19 +36,5 @@ new Twitch.Embed("twitch-embed-2", {
     width: 540,
     height: 400,
     autoplay: false,
-    video: "684623972"
-});
-
-new Twitch.Embed("twitch-embed-3", {
-    width: 540,
-    height: 400,
-    autoplay: false,
-    video: "689872826"
-});
-
-new Twitch.Embed("twitch-embed-4", {
-    width: 540,
-    height: 400,
-    autoplay: false,
-    video: "683899955"
+    video: "708228552"
 });
